@@ -11,7 +11,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err,db)=>{
 	db.collection('Todo').find(
 		//on peut ne pas avoit cet oobject
 		//{completed:true}
-		{_id:new ObjectId('58700ba90d22cf10209700d6')}
+		{_id:new ObjectId('5873b34cbe4c6a0e388ba782')}
 		).toArray().then((docs)=>{
 		console.log('todos');
 		console.log(JSON.stringify(docs,undefined,2));
